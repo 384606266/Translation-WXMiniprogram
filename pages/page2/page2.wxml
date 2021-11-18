@@ -1,0 +1,39 @@
+<view class="container">
+  <view class='classify'>
+  <text>输入的语种</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps'>
+        <text class='select_text'>{{selectDatas[indexs]}}</text>
+        <!-- <image class='words_img' src='/imgs/img1.jpg'></image> -->
+        <image class='select_img {{shows&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image> 
+        <!-- flag&&语句  flag为真时执行语句-->
+      </view>
+      <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
+        <!-- wx:key='this'表示item就是唯一表示各项元素的数据，  data-index=''是为了在js中的dataset获取数据-->
+      </view>
+    </view>
+  </view>
+  
+  <view class='classify'>
+  <text>目标语种</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps2'>
+        <text class='select_text'>{{selectDatas[indexs2]}}</text>
+        <!-- <image class='words_img' src='/imgs/img1.jpg'></image> -->
+        <image class='select_img {{shows2&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image> 
+        <!-- flag&&语句  flag为真时执行语句-->
+      </view>
+      <view class='option_box' style='height:{{shows2?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps2'>{{item}}</text>
+        <!-- wx:key='this'表示item就是唯一表示各项元素的数据，  data-index=''是为了在js中的dataset获取数据-->
+      </view>
+    </view>
+  </view>
+  
+  <button style="margin:10rpx;" bindtap="chooseimage">获取图片</button>
+  <image src="{{tempFilePaths }}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 450rpx" />
+  <button style="margin:10rpx;" bindtap="uploadPhoto">上传</button>
+</view>
