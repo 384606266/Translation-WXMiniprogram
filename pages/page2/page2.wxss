@@ -75,3 +75,11 @@
   padding: 10rpx;
   color: rgb(102, 102, 102);
 }
+
+.ad{
+  width:86%;
+  margin-left:7%;
+  color:white;
+  background-color:#1296db;
+  }
+  

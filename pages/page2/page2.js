@@ -34,8 +34,12 @@ Page({
         'FromLanguage': '',
         'ToLanguage': ''
       },
-      success: (result) => {},
-      fail: (res) => {},
+      success: function(res) {
+        console.log(res.data) //打印到控制台
+      },
+      fail: function(res) {
+        console.log(res.data) //打印到控制台
+      },
       complete: (res) => {},
     })
   },

@@ -33,7 +33,7 @@
     </view>
   </view>
   
-  <button style="margin:10rpx;" bindtap="chooseimage">获取图片</button>
+  <button class = 'ad' style="margin:10rpx;" bindtap="chooseimage">获取图片</button>
   <image src="{{tempFilePaths }}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 450rpx" />
-  <button style="margin:10rpx;" bindtap="uploadPhoto">上传</button>
+  <button class = 'ad' style="margin:10rpx;" bindtap="uploadPhoto">上传</button>
 </view>
