@@ -8,6 +8,7 @@ Page({
     indexs: 0, //输入语言的下拉列表下标,
     indexs2: 0, //目标语言的下拉列表下表
     content: '',
+    result: '',
   },
 
   // 点击下拉显示框
@@ -46,10 +47,39 @@ Page({
       content: e.detail.value
     })
   },
-  save: function (e) {
-    var title = this.data.title;
-    var content = this.data.content;
+  uploadString: function (e) {
+    var that = this
+    var content = that.data.content;
     // 提交请求
     console.log(content);
+    wx.showLoading();
+    wx.request({
+      url: 'url',
+      header:{
+        "content-type": "application/x-www-form-urlencoded"		
+      },
+      method: "POST",
+      data: {		//向服务器发送的信息
+        q: that.data.content,
+        src: that.data.indexs,
+        dst: that.data.indexs2
+      },
+      success: function(res) {
+        if (res.data.ok == 1) {
+          this.setData({
+            result: res.data.r	//服务器返回的结果
+          })
+        }
+        if (res.ok == 0) {
+          console.log(res.data.error_type)
+        }
+      },
+      fail: function(res) {
+        console.log(false); //打印到控制台
+      },
+      complete: function (res) {
+        wx.hideLoading();
+      }
+    })
   }
 })

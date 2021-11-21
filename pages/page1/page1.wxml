@@ -36,6 +36,7 @@
 
   <view>
   <textarea placeholder="请输入内容" placeholder-class="placeholder" bindinput="inputContent" />
-  <button bindtap="save">翻译</button>
+  <button bindtap="uploadString">翻译</button>
+  <text>{{result}}</text>
 </view>
 </view>

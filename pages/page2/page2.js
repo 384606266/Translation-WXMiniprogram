@@ -5,7 +5,8 @@ Page({
     selectDatas: ['英语', '德语', '法语','西班牙语'], //下拉列表的数据
     indexs: 0, //输入语言的下拉列表下标,
     indexs2: 0, //目标语言的下拉列表下表
-    tempFilePaths: ''
+    tempFilePaths: '',
+    result: '翻译结果' //存储翻译结果
   },
   onLoad: function () {
   },
@@ -26,21 +27,31 @@ Page({
 
   uploadPhoto: function () {
     var that = this;
+    wx.showLoading();
     wx.uploadFile({
       filePath: 'that.data.tempFilePaths',
       name: 'img',    
       url: 'url',    //服务器地址
       formData: {
-        'FromLanguage': '',
-        'ToLanguage': ''
+        'src': that.data.indexs,
+        'dst': that.data.indexs2
       },
       success: function(res) {
-        console.log(res.data) //打印到控制台
+        if (res.data.ok == 1) {
+          this.setData({
+            result: res.data.r	//服务器返回的结果
+          })
+        }
+        else{
+          console.log(res.data.error_type)
+        }
       },
       fail: function(res) {
-        console.log(res.data) //打印到控制台
+        console.log(false) //打印到控制台
       },
-      complete: (res) => {},
+      complete: function (res) {
+        wx.hideLoading()
+      }
     })
   },
 
