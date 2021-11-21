@@ -2,7 +2,8 @@ Page({
   data: {
     shows: false, //控制下拉列表的显示隐藏，false隐藏、true显示
     shows2: false, //控制第二个下拉列表
-    selectDatas: ['英语', '德语', '法语','西班牙语'], //下拉列表的数据
+    selectDatas: ['英语', '德语', '法语','西班牙语','简体中文','繁体中文','俄语','日语','韩语','意大利语'], //下拉列表的数据
+    symbols: ['en','de','fr','es','ch_sim','ch_tra','ru','ja','ko','it'], //符号列表
     indexs: 0, //输入语言的下拉列表下标,
     indexs2: 0, //目标语言的下拉列表下表
     tempFilePaths: '',
@@ -29,21 +30,23 @@ Page({
     var that = this;
     wx.showLoading();
     wx.uploadFile({
-      filePath: 'that.data.tempFilePaths',
+      filePath: that.data.tempFilePaths[0],
       name: 'img',    
-      url: 'url',    //服务器地址
+      //url: 'https://192.168.1.110:8000/texttranslator/',  //测试用服务器网址
+      url: '',
       formData: {
-        'src': that.data.indexs,
-        'dst': that.data.indexs2
+        src: that.data.symbols[that.data.indexs],
+        dst: that.data.symbols[that.data.indexs2]
       },
-      success: function(res) {
-        if (res.data.ok == 1) {
+      success: (res) => {
+        var data = JSON.parse(res.data)
+        if (data.ok == 1) {
           this.setData({
-            result: res.data.r	//服务器返回的结果
+            result: data.r	//服务器返回的结果
           })
         }
         else{
-          console.log(res.data.error_type)
+          console.log(data.error_type)
         }
       },
       fail: function(res) {
