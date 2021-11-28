@@ -24,13 +24,19 @@ pip install OpenNMT-py
 pip install flask flask_cors 
 ```
 
-Then you'll need to install the dependences for the frontend. We will use yarn instead of node because it downloads packages in parallel, which reduces the download time. Also because it adds nice emojis in the terminal while it's downloading. 
+#### Front-End Environment
+Then you'll need to install the dependences for the frontend. We will use yarn instead of node because it downloads packages in parallel, which reduces the download time. 
 
 ```
 node -v
 npm -v  #make sure that you have node and npm 
 yarn install
 ```
+#### Model download
+
+Currently we have two translation pretrained model of Polish and Esthonian.
+
+And we can download it from  [Jiaoda Yunpan](https://jbox.sjtu.edu.cn/l/v18BdF) and put it in `./api`
 
 ### Starting the Frontend
 
@@ -43,7 +49,7 @@ To start the frontend, simply go in the api folder of the project (`./nmt-react/
 
 ## File structure
 ### api
-In `pozhtranslator.py` & `rozhtranslator.py`, we define several translator Class, which are used to preprocess and translate based on exported models(./api/model).
+In `pozhtranslator.py` & `rozhtranslator.py`, we define several translator Class, which are used to preprocess and translate based on exported models`./api/model`.
 
 ### node_modules
 They are generated automatically after we run `yarn install`
