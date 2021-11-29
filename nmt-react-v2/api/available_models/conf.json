@@ -1,0 +1,30 @@
+{
+    "models_root": "./available_models",
+    "models": [
+      {
+        "id": 100,
+        "model": "model_step_80000_release.pt",
+        "timeout": 600,
+        "on_timeout": "to_cpu",
+        "load": true,
+        "opt": {
+          "batch_size": 1,
+          "beam_size": 10,
+          "replace_unk": true
+        }
+      },
+      {
+        "id": 101,
+        "model": "model_step_100000_release.pt",
+        "timeout": 600,
+        "on_timeout": "to_cpu",
+        "load": true,
+        "opt": {
+          "batch_size": 1,
+          "beam_size": 10,
+          "replace_unk": true
+        }
+      }
+    ],
+    "translate_url": "http://localhost:5000"
+  }
