@@ -30,7 +30,7 @@ const ButtonToggle = styled(Button)`
 const ButtonGroup = styled.div`
   display: flex;
 `;
-const types = ['Polish', 'Esthonian'];
+const types = ['Polish', 'Romanian'];
 
 const WAIT_INTERVAL = 700;
 
