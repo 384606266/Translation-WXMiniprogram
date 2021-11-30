@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view >
+<view>
   <view class="container">
     <image src="/imgs/img3.png"></image>
   </view>
@@ -8,5 +8,5 @@
       <button class="flex-sub bg-grey padding-sm margin-xs radius" size="mini" bindtap="bindViewTap1">点击进入输入翻译界面</button>
       <button class="flex-sub bg-grey padding-sm margin-xs radius" size="mini" bindtap="bindViewTap2">点击进入拍照翻译界面</button>
     </view>
-  </view>  
+  </view>
 </view>

@@ -1,5 +1,5 @@
 /**index.wxss**/
-.content{
+.content {
   width: 90%;
   margin: 0 5%;
   display: flex;
@@ -8,12 +8,12 @@
   align-items: center;
 }
 
-.hover{
+.hover {
   background-color: gray;
 }
 
-.ad{
+.ad {
   border-radius: 10px;
   font-size: 30rpx;
-  border: 1px solid 	#228B22;
-}  
+  border: 1px solid #228B22;
+}
