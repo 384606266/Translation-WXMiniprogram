@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app)
 
 lang_id={
-	"Esthonian":100,
+	"Romanian":100,
 	"Polish":101,
 }
 

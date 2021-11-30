@@ -27,9 +27,9 @@ def translate_processor():
 	if language == "Polish":
 		translator = PoZhTranslator()
 		print('select polish')
-	elif language =='Esthonian':
+	elif language =='Romanian':
 		translator = RoZhTranslator()
-		print('select Esthonian')
+		print('select Romanian')
 
 	
 	output = translator.translate(source_input)

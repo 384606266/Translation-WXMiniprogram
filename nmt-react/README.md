@@ -34,7 +34,7 @@ yarn install
 ```
 #### Model download
 
-Currently we have two translation pretrained model of Polish and Esthonian.
+Currently we have two translation pretrained model of Polish and Romanian.
 
 And we can download it from  [Jiaoda Yunpan](https://jbox.sjtu.edu.cn/l/v18BdF) and put it in `./api`
 
