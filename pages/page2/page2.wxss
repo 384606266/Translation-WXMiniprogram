@@ -1,4 +1,4 @@
-.contain{
+.contain {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -7,18 +7,20 @@
   box-sizing: border-box;
 }
 
-.classify{
+.classify {
   margin: 0 25rpx;
   height: 90rpx;
   line-height: 90rpx;
   display: flex;
   align-items: center;
 }
-.classify text{
+
+.classify text {
   font-size: 30rpx;
   color: #000000;
   margin-left: 15rpx;
 }
+
 /* 下拉框 */
 .select_box {
   width: 500rpx;
@@ -47,6 +49,7 @@
   line-height: 86rpx;
   height: 86rpx;
 }
+
 /* 图像格式*/
 .select_img {
   width: 40rpx;
@@ -54,6 +57,7 @@
   display: block;
   transition: transform 0.3s;
 }
+
 /* 图像动画*/
 .select_img_rotate {
   transform: rotate(180deg);
@@ -82,10 +86,9 @@
   color: rgb(102, 102, 102);
 }
 
-.ad{
-  width:86%;
-  margin-left:7%;
-  color:white;
-  background-color:#1296db;
-  }
-  
+.ad {
+  width: 86%;
+  margin-left: 7%;
+  color: white;
+  background-color: #1296db;
+}

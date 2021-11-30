@@ -1,13 +1,13 @@
-<image mode="aspectFit"  style="height: 300rpx;" src="/imgs/img4.png"></image>
+<image mode="aspectFit" style="height: 300rpx;" src="/imgs/img4.png"></image>
 <view class="contain">
   <view class='classify'>
-  <text class="solid-bottom text-lg padding">输入语种</text>
-  <!-- 下拉框 -->
+    <text class="solid-bottom text-lg padding">输入语种</text>
+    <!-- 下拉框 -->
     <view class='select_box'>
       <view class='select' catchtap='selectTaps'>
         <text class='select_text'>{{selectDatas[indexs]}}</text>
         <!-- <image class='words_img' src='/imgs/img1.jpg'></image> -->
-        <image class='select_img {{shows&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image> 
+        <image class='select_img {{shows&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image>
         <!-- flag&&语句  flag为真时执行语句-->
       </view>
       <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
@@ -16,15 +16,15 @@
       </view>
     </view>
   </view>
-  
+
   <view class='classify'>
-  <text class="solid-bottom text-lg padding">目标语种</text>
-  <!-- 下拉框 -->
+    <text class="solid-bottom text-lg padding">目标语种</text>
+    <!-- 下拉框 -->
     <view class='select_box'>
       <view class='select' catchtap='selectTaps2'>
         <text class='select_text'>{{selectDatas[indexs2]}}</text>
         <!-- <image class='words_img' src='/imgs/img1.jpg'></image> -->
-        <image class='select_img {{shows2&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image> 
+        <image class='select_img {{shows2&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image>
         <!-- flag&&语句  flag为真时执行语句-->
       </view>
       <view class='option_box' style='height:{{shows2?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
@@ -33,7 +33,7 @@
       </view>
     </view>
   </view>
-  
+
   <button class="bg-red" style="margin:10rpx;" bindtap="chooseimage">获取图片</button>
   <image src="{{tempFilePaths}}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 250rpx" />
   <button class="bg-red" style="margin:10rpx;" bindtap="uploadPhoto">上传</button>
