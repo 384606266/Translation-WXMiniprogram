@@ -5,9 +5,8 @@
 
 
 This tool based under a Neural Machine Translation technology will help you translate Low resource languages to Chinese. The frontend uses ReactJS to dynamically render the DOM and Bootstrap to make the website responsive. The backend is written in Python using Flask to easily define the endpoints. The machine learning model was built using TensorFlow and OpenNMT.
-## What's **New** comparing with Version1?
+## What's **New** ?
 * We deployed the models in a more **efficient** way with the help of opennmt server, which can load all the models in one time before translating and save the time on switching on loading diffenrent model. Therefore, it improves the translation efficiency. 
-* By deploying model with the help of OpenNMT server API, we made the code **brief and clean**. 
 * We also replaced the previous models with more **advanced** ones.
 ## Getting Started (same as V1)
 
@@ -51,8 +50,10 @@ To start the frontend, simply go in the api folder of the project (`./nmt-react/
 
 
 ## File structure 
-### api **(Different from V1)**
-This folder contains models(`./avaliable_models/models_step_xxxx_release.bin`) and config file. In `conf.json`, we define paths, id and options of models, which will be firstly read by running `python server.py`.
+### api **(Different)**
+* availabel_models: contains two models and config file(`conf.json`) we define paths, id and options of models.
+* preprocess: use bpe to preprocess the input.
+* server.py: run the back end
 
 ### node_modules
 They are generated automatically after we run `yarn install`
