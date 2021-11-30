@@ -39,7 +39,7 @@ yarn install
 
 Currently we have two translation pretrained model of Polish and Esthonian.
 
-And we can download it from  [Jiaoda Yunpan](https://jbox.sjtu.edu.cn/l/v18BdF) and put it in folder`./api/available_models`
+And we can download it from  [Jiaoda Yunpan](https://jbox.sjtu.edu.cn/l/61Jg6C) and put it in folder`./api/available_models`
 
 ### Starting the Frontend
 
