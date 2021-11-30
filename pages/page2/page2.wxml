@@ -1,6 +1,7 @@
-<view class="container">
+<image mode="aspectFit"  style="height: 300rpx;" src="/imgs/img4.png"></image>
+<view class="contain">
   <view class='classify'>
-  <text>输入的语种</text>
+  <text class="solid-bottom text-lg padding">输入语种</text>
   <!-- 下拉框 -->
     <view class='select_box'>
       <view class='select' catchtap='selectTaps'>
@@ -17,7 +18,7 @@
   </view>
   
   <view class='classify'>
-  <text>目标语种</text>
+  <text class="solid-bottom text-lg padding">目标语种</text>
   <!-- 下拉框 -->
     <view class='select_box'>
       <view class='select' catchtap='selectTaps2'>
@@ -33,9 +34,11 @@
     </view>
   </view>
   
-  <button class = 'ad' style="margin:10rpx;" bindtap="chooseimage">获取图片</button>
-  <image src="{{tempFilePaths }}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 250rpx" />
-  <button class = 'ad' style="margin:10rpx;" bindtap="uploadPhoto">上传</button>
+  <button class="bg-red" style="margin:10rpx;" bindtap="chooseimage">获取图片</button>
+  <image src="{{tempFilePaths}}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 250rpx" />
+  <button class="bg-red" style="margin:10rpx;" bindtap="uploadPhoto">上传</button>
 
-  <text>{{result}}</text>
+  <view class="solid-bottom text-lg padding text-center">
+    <text class="text-black">{{result}}</text>
+  </view>
 </view>

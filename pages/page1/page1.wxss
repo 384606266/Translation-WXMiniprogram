@@ -1,5 +1,14 @@
-/* classify */
+.contain{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 .classify{
+  flex: auto;
   margin: 0 25rpx;
   height: 90rpx;
   line-height: 90rpx;
@@ -14,7 +23,6 @@
 }
 /* 下拉框 */
 .select_box {
-  background: #fff;
   width: 500rpx;
   /* margin: 0 auto; */
   height: 90rpx;
