@@ -16,6 +16,8 @@ CORS(app)
 lang_id={
 	"Romanian":100,
 	"Polish":101,
+	"Czech":102,
+	"Greek":103
 }
 
 @app.route('/translate', methods=['POST'])

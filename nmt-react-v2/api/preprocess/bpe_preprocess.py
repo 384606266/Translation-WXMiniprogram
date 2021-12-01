@@ -259,6 +259,13 @@ def pre(line,id):
     elif id==101:
         codes = codecs.open('./preprocess/codes.50000.bpe.pol', encoding='utf-8')
         vocab = codecs.open('./preprocess/vocab.50000.bpe.pol', encoding='utf-8')
+    elif id==102:
+        codes = codecs.open('./preprocess/codes.50000.bpe.ces', encoding='utf-8')
+        vocab = codecs.open('./preprocess/vocab.50000.bpe.ces', encoding='utf-8')
+    elif id==103:
+        codes = codecs.open('./preprocess/codes.50000.bpe.ell', encoding='utf-8')
+        vocab = codecs.open('./preprocess/vocab.50000.bpe.ell', encoding='utf-8')
+
     vocabulary = read_vocabulary(vocab, None)
     bpe = BPE(codes, -1, '@@', vocabulary, None)
     bpelist = bpe.process_line(line, 0.0)[0]  #bpelist = ['xx','xx']
