@@ -11,7 +11,7 @@ This tool based under a Neural Machine Translation technology will help you tran
 
 ### Performance of exported Models
 | Language |  BLEU | Accuracy | ppl  |
-|:--------:|:-----:| -------- | -----|
+|:--------:|:-----:|:--------:|:----:|
 | Polish   | 21.63 |   52.4   | 30.0 |
 | Romanian | 19.94 |   50.6   | 27.8 |
 | Czech    | 20.18 |   51.2   | 28.3 |
@@ -56,7 +56,7 @@ To start the frontend, simply go in the root of the project (`./nmt-react`) and 
 
 ### Starting the Backend
 
-To start the frontend, simply go in the api folder of the project (`./nmt-react/api`) and type  `python server.py`.
+To start the Backend, simply go in the api folder of the project (`./nmt-react/api`) and type  `python server.py`.
 
 
 ## File structure 
