@@ -6,8 +6,18 @@
 
 This tool based under a Neural Machine Translation technology will help you translate Low resource languages to Chinese. The frontend uses ReactJS to dynamically render the DOM and Bootstrap to make the website responsive. The backend is written in Python using Flask to easily define the endpoints. The machine learning model was built using TensorFlow and OpenNMT.
 ## What's **New** ?
-* We deployed the models in a more **efficient** way with the help of opennmt server, which can load all the models in one time before translating and save the time on switching on loading diffenrent model. Therefore, it improves the translation efficiency. 
+* We deployed the models in a more **efficient** way with the help of opennmt server, which can load all the models in one time before translating and save the time of switching between models.
 * We add new models of **Polish, Romanian, Czech, Greek**.
+
+### Performance of exported Models
+| Language |  BLEU | Accuracy | ppl  |
+|:--------:|:-----:| -------- | -----|
+| Polish   | 21.63 |   52.4   | 30.0 |
+| Romanian | 19.94 |   50.6   | 27.8 |
+| Czech    | 20.18 |   51.2   | 28.3 |
+| Greek    | 19.51 |   49.6   | 27.6 |
+
+
 ## Getting Started (same as V1)
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -17,7 +27,7 @@ These instructions will get you a copy of the project up and running on your loc
 First, you'll need to install pytorch OpenNMT-py ctranslate2, flask, flask_cors. It is highly recommended to install them in a virtual environment.
 
 #### Back-End Environment
-```
+```Bash
 conda create -n nmt-flask python=3.6.2
 conda activate nmt-flask
 pip install --upgrade pip
@@ -29,7 +39,7 @@ pip install flask flask_cors
 #### Front-End Environment
 Then you'll need to install the dependences for the frontend. We will use yarn instead of node because it downloads packages in parallel, which reduces the download time. 
 
-```
+```Bash
 node -v
 npm -v  #make sure that you have node and npm 
 yarn install
@@ -65,7 +75,7 @@ Source code from [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py).
 
 They are front-end folders based on React.
 
-## Built With
+## Reference
 
 * [create-react-app](https://github.com/facebook/create-react-app) - Toolkit to setup ReactJS
 * [OpenNMT](https://opennmt.net/) - Machine Translation Tool
@@ -76,8 +86,5 @@ They are front-end folders based on React.
 
 * **Xinran Chen** - [JasmineChen123](https://github.com/JasmineChen123)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
