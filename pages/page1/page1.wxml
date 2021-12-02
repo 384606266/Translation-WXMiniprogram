@@ -1,5 +1,6 @@
-<image mode="aspectFit" style="height: 300rpx;" src="/imgs/img4.png"></image>
+
 <view class="contain">
+  <image mode="aspectFit" style="height: 300rpx;" src="/imgs/img7.jfif"></image>
   <view class='classify'>
     <text class="solid-bottom text-lg padding">输入语种</text>
     <!-- 下拉框 -->
@@ -38,7 +39,7 @@
     <textarea class="flex-sub text-center" style="font-size: 40rpx;" placeholder="请输入内容" placeholder-class="placeholder" bindinput="inputContent" />
     <button class="bg-red" bindtap="uploadString">翻译</button>
     <view class="solid-bottom text-lg padding text-center">
-      <text class="text-black">{{result}}</text>
+      <text class="flex-sub text-center" style="font-size: 40rpx">{{result}}</text>
     </view>
   </view>
 </view>

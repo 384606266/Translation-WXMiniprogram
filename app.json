@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "一带一路翻译小程序",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",

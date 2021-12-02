@@ -1,4 +1,4 @@
-<image mode="aspectFit" style="height: 300rpx;" src="/imgs/img4.png"></image>
+<image mode="aspectFit" style="height: 300rpx;" src="/imgs/img7.jfif"></image>
 <view class="contain">
   <view class='classify'>
     <text class="solid-bottom text-lg padding">输入语种</text>
@@ -39,6 +39,6 @@
   <button class="bg-red" style="margin:10rpx;" bindtap="uploadPhoto">上传</button>
 
   <view class="solid-bottom text-lg padding text-center">
-    <text class="text-black">{{result}}</text>
+    <text class="flex-sub text-center" style="font-size: 40rpx">{{result}}</text>
   </view>
 </view>
