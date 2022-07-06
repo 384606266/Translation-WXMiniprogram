@@ -1,5 +1,6 @@
-<image mode="scaleToFill" style="height: 200rpx;" src="/imgs/img7.jfif"></image>
 <view class="contain">
+<image mode="aspectFit" style="height: 200rpx;" src="/imgs/img7.jfif"></image>
+
   <view class='classify'>
     <text class="solid-bottom text-lg padding">翻译方向</text>
     <!-- 下拉框1 -->
