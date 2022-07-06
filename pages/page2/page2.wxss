@@ -8,17 +8,16 @@
 }
 
 .classify {
+  font-family:Impact, Haettenschweiler, ‘Arial Narrow Bold’, sans-serif;
+  font-size: 32rpx;
+  font-weight: 600;
+  flex: auto;
   margin: 0 25rpx;
   height: 90rpx;
   line-height: 90rpx;
+  border-bottom: 1rpx solid #e6e6e6;
   display: flex;
   align-items: center;
-}
-
-.classify text {
-  font-size: 30rpx;
-  color: #000000;
-  margin-left: 15rpx;
 }
 
 /* 下拉框 */
@@ -43,9 +42,9 @@
 }
 
 .select_text {
-  font-size: 28rpx;
+  font-family:‘Trebuchet MS’, ‘Lucida Sans Unicode’, ‘Lucida Grande’, ‘Lucida Sans’, Arial, sans-serif;
+  font-size: 32rpx;
   flex: 1;
-  color: rgb(82, 21, 194);
   line-height: 86rpx;
   height: 86rpx;
 }
@@ -72,18 +71,25 @@
   height: 0;
   overflow-y: auto;
   border-top: 0;
-  background: #fff;
+  background: rgb(231, 227, 227);
   transition: height 0.3s;
   z-index: 100;
+  border-radius: 5px;   /*增加圆角*/
 }
 
 .option {
   display: block;
   line-height: 40rpx;
-  font-size: 28rpx;
+  font-size: 32rpx;
   border-bottom: 1px solid #efefef;
   padding: 10rpx;
   color: rgb(102, 102, 102);
+}
+
+.textareaClass{
+  font-size: 40rpx; 
+  background-color: rgb(218, 224, 224);
+  border-radius: 5px; 
 }
 
 .ad {
@@ -91,4 +97,9 @@
   margin-left: 7%;
   color: white;
   background-color: #1296db;
+}
+
+.button{
+  font-size: 35rpx;
+
 }

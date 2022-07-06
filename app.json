@@ -6,10 +6,11 @@
 
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "一带一路翻译小程序",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "译通丝路",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,45 +1,43 @@
-
 <view class="contain">
   <image mode="aspectFit" style="height: 300rpx;" src="/imgs/img7.jfif"></image>
   <view class='classify'>
-    <text class="solid-bottom text-lg padding">输入语种</text>
-    <!-- 下拉框 -->
+    <text class="solid-bottom text-lg padding">翻译方向</text>
+    <!-- 下拉框1 -->
     <view class='select_box'>
       <view class='select' catchtap='selectTaps'>
-        <text class='select_text'>{{selectDatas[indexs]}}</text>
+        <text class='select_text'>{{direction[indexs].label}}</text>
         <!-- <image class='words_img' src='/imgs/img1.jpg'></image> -->
         <image class='select_img {{shows&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image>
         <!-- flag&&语句  flag为真时执行语句-->
       </view>
-      <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
-        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
+      <view class='option_box' style='height:{{shows?(direction.length>5?300:direction.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs==direction.length-1&&"border:0;"}}' wx:for='{{direction}}' wx:key='this' data-index='{{indexs}}' catchtap='optionTaps'>{{item.label}}</text>
         <!-- wx:key='this'表示item就是唯一表示各项元素的数据，  data-index=''是为了在js中的dataset获取数据-->
       </view>
     </view>
   </view>
-
   <view class='classify'>
     <text class="solid-bottom text-lg padding">目标语种</text>
-    <!-- 下拉框 -->
+    <!-- 下拉框2 -->
     <view class='select_box'>
       <view class='select' catchtap='selectTaps2'>
-        <text class='select_text'>{{selectDatas[indexs2]}}</text>
+        <text class='select_text'>{{options[indexs2].label}}</text>
         <!-- <image class='words_img' src='/imgs/img1.jpg'></image> -->
         <image class='select_img {{shows2&&"select_img_rotate"}}' src='/imgs/img2.jpg'></image>
         <!-- flag&&语句  flag为真时执行语句-->
       </view>
-      <view class='option_box' style='height:{{shows2?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
-        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps2'>{{item}}</text>
+      <view class='option_box' style='height:{{shows2?(options.length>5?300:options.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs==options.length-1&&"border:0;"}}' wx:for='{{options}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps2'>{{item.label}}</text>
         <!-- wx:key='this'表示item就是唯一表示各项元素的数据，  data-index=''是为了在js中的dataset获取数据-->
       </view>
     </view>
   </view>
 
   <view>
-    <textarea class="flex-sub text-center" style="font-size: 40rpx;" placeholder="请输入内容" placeholder-class="placeholder" bindinput="inputContent" />
-    <button class="bg-red" bindtap="uploadString">翻译</button>
+    <textarea class="flex-sub textareaClass text-left" style="margin: 10pt;" placeholder="请输入内容" placeholder-class="placeholder" 	placeholder-style="align-items:center;" bindinput="inputContent" />
+    <button class="bg-red" style="width: 90%;" bindtap="uploadString">翻译</button>
     <view class="solid-bottom text-lg padding text-center">
-      <text class="flex-sub text-center" style="font-size: 40rpx">{{result}}</text>
+    <textarea class="flex-sub textareaClass text-left" style="font-size: 40rpx" placeholder="翻译结果" placeholder-class="placeholder" placeholder-style="align-items:left;" value="{{result}}"/>
     </view>
   </view>
 </view>
