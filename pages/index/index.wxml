@@ -1,12 +1,22 @@
 <!--index.wxml-->
-<view>
-  <view class="container">
-    <image src="/imgs/img3.png"></image>
+<view class="padding">
+  <view class="flex flex-wrap">
+    <button class="button bg-red light" style="width: 100%; margin-top: 50rpx;" bindtap="bindViewTap1" >
+      <view class="button-title">文本翻译</view>
+      <view class="button-content">复制或输入文本进行41种小语种翻译</view>
+    </button>
+    <view class="basis-df"></view>
+    <button class="button bg-mauve light" style="width: 100%;" bindtap="bindViewTap2" >
+      <view class="button-title">图片翻译</view>
+      <view class="button-content">拍照或从相册选择图片，对图片内容进行翻译</view>
+    </button>
+    <button class="button bg-green light" style="width: 100%;" bindtap="bindViewTap3" >
+      <view class="button-title">社区</view>
+      <view class="button-content">点击进入社区，查看支持的语料库和模型</view>
+    </button>
   </view>
-  <view class="padding">
-    <view class="flex">
+    <!-- <view class="flex">
       <button class="flex-sub bg-red padding-sm margin-xs radius" size="mini" bindtap="bindViewTap1">文本翻译</button>
       <button class="flex-sub bg-red padding-sm margin-xs radius" size="mini" bindtap="bindViewTap2">图片翻译</button>
-    </view>
-  </view>
+    </view> -->
 </view>

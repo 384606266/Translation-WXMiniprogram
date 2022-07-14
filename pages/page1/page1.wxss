@@ -88,6 +88,8 @@
 
 .textareaClass{
   font-size: 40rpx; 
-  background-color: rgb(218, 224, 224);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px; 
+  margin-top: 10pt; 
+  margin-bottom: 10pt;
 }

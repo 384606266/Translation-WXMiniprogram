@@ -4,19 +4,21 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    
   },
-  
   bindViewTap1() {
-    wx.navigateTo({
+    console.log("1")
+    wx.switchTab({
       url: '../page1/page1'
     })
   },
   bindViewTap2() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../page2/page2'
     })
   },
-
+  bindViewTap3() {
+    wx.switchTab({
+      url: '../community/community'
+    })
+  },
 })

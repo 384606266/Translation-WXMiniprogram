@@ -1,16 +1,48 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/page1/page1",
-    "pages/page2/page2"
-
+    "pages/page2/page2",
+    "pages/community/community"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "译通丝路",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#f4645f",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/首页.png",
+        "selectedIconPath": "imgs/首页_填充.png"
+      },
+      {
+        "pagePath": "pages/page1/page1",
+        "text": "输入翻译",
+        "iconPath": "imgs/输入.png",
+        "selectedIconPath": "imgs/输入_填充.png"
+      },
+      {
+        "pagePath": "pages/page2/page2",
+        "text": "图片翻译",
+        "iconPath": "imgs/图片.png",
+        "selectedIconPath": "imgs/图片_填充.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "imgs/其他.png",
+        "selectedIconPath": "imgs/其他_填充.png"
+      }
+    ],
+    "position": "bottom"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

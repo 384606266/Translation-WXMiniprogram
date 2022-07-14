@@ -34,9 +34,8 @@
     </view>
   </view>
 
-  <button class="bg-red button" style="margin:5rpx;" bindtap="chooseimage">上传图片</button>
+  <button class="bg-blue button" style="margin-top:10rpx; width: 70%;" bindtap="chooseimage">上传图片</button>
   <image src="{{tempFilePaths}}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 250rpx; margin: 10pt;" />
-  <button class="bg-red button" style="margin:10rpx;" bindtap="uploadPhoto">翻译</button>
-
+  <button class="bg-blue button" style="margin:5rpx; width: 70%;" bindtap="uploadPhoto">翻译</button>
   <textarea class="textareaClass text-left" style="font-size: 40rpx" placeholder="翻译结果" placeholder-class="placeholder" placeholder-style="align-items:left;" value="{{result}}"/>
 </view>

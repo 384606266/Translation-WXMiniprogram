@@ -34,10 +34,9 @@
   </view>
 
   <view>
-    <textarea class="flex-sub textareaClass text-left" style="margin: 10pt;" placeholder="请输入内容" placeholder-class="placeholder" 	placeholder-style="align-items:center;" bindinput="inputContent" />
-    <button class="bg-red" style="width: 90%;" bindtap="uploadString">翻译</button>
-    <view class="solid-bottom text-lg padding text-center">
-    <textarea class="flex-sub textareaClass text-left" style="font-size: 40rpx" placeholder="翻译结果" placeholder-class="placeholder" placeholder-style="align-items:left;" value="{{result}}"/>
-    </view>
+    <textarea class="flex-sub textareaClass text-left" style="width:100%;" placeholder="请输入内容" placeholder-class="placeholder" 	placeholder-style="align-items:center;" bindinput="inputContent" />
+    <button class="bg-blue" style="width:100%;" bindtap="uploadString">翻译</button>
+    <textarea class="flex-sub textareaClass text-left"
+    placeholder="翻译结果" placeholder-class="placeholder" placeholder-style="align-items:center;" value="{{result}}"/>
   </view>
 </view>
