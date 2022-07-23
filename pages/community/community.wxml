@@ -1,0 +1,75 @@
+<i-tabs current="{{ current }}" bindchange="handleChange">
+    <i-tab key="tab1" title="模型"></i-tab>
+    <i-tab key="tab2" title="语料库"></i-tab>
+</i-tabs>
+
+<view wx:if="{{current=='tab1'}}">
+<i-card full title="中文->波兰语模型" extra="2积分">
+    <view slot="content">由中文->波兰语语料库训练得到，大小为500M</view>
+    <view slot="content">下载数：32  更新时间：2022.7.22</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+<i-card full title="中文->希腊语模型" extra="2积分">
+    <view slot="content">由中文->希腊语语料库训练得到，大小为600M</view>
+    <view slot="content">下载数：27  更新时间：2022.7.13</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+<i-card full title="中文->土耳其语模型" extra="2积分">
+    <view slot="content">由中文->土耳其语料库训练得到，大小为400M</view>
+    <view slot="content">下载数：22  更新时间：2022.7.3</view>
+    <view slot="footer">贡献者：maicha</view>
+</i-card>
+
+<i-card full title="罗马尼亚语->中文模型" extra="2积分">
+    <view slot="content">由罗马尼亚语->中文语料库训练得到，大小为470M</view>
+    <view slot="content">下载数：19  更新时间：2022.7.12</view>
+    <view slot="footer">贡献者：Alice</view>
+</i-card>
+
+<i-card full title="匈牙利语->中文模型" extra="2积分">
+    <view slot="content">由匈牙利语->中文语料库训练得到，大小为390M</view>
+    <view slot="content">下载数：19  更新时间：2022.7.22</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+<i-card full title="立陶宛语->中文模型" extra="2积分">
+    <view slot="content">由立陶宛语->中文语料库训练得到，大小为440M</view>
+    <view slot="content">下载数：17  更新时间：2022.7.13</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+</view>
+
+<view wx:if="{{current=='tab2'}}">
+<i-card full title="希腊语->中文语料库" extra="1积分">
+    <view slot="content">包含40k条希腊语->中文的语料资源，已进行对齐</view>
+    <view slot="content">下载数：61  更新时间：2022.7.1</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+<i-card full title="俄语->中文语料库" extra="1积分">
+    <view slot="content">包含80k条俄语->中文的语料资源，已进行对齐</view>
+    <view slot="content">下载数：57  更新时间：2022.7.1</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+<i-card full title="中文->波兰语语料库" extra="1积分">
+    <view slot="content">包含50k条中文->波兰语的语料资源，已进行对齐</view>
+    <view slot="content">下载数：56  更新时间：2022.7.1</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+<i-card full title="中文->希腊语语料库" extra="1积分">
+    <view slot="content">包含40k条中文->希腊语的语料资源，已进行对齐</view>
+    <view slot="content">下载数：47  更新时间：2022.7.1</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+
+<i-card full title="中文->土耳其语语料库" extra="1积分">
+    <view slot="content">包含37k条中文->土耳其语的语料资源，已进行对齐</view>
+    <view slot="content">下载数：44  更新时间：2022.7.1</view>
+    <view slot="footer">贡献者：译通丝路</view>
+</i-card>
+</view>

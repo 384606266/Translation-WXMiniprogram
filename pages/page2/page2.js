@@ -77,7 +77,7 @@ Page({
     wx.uploadFile({
       filePath: that.data.tempFilePaths[0],
       name: 'image',    
-      url: 'http://202.120.36.7:55000/image/',
+      url: 'http://47.115.227.63:5000/image/',
       header: {
         "Content-Type": "multipart/form-data"
       },
@@ -136,6 +136,5 @@ Page({
         shows2: !this.data.shows2
       });
     },
-  
   
  })

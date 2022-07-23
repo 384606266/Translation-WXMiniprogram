@@ -95,7 +95,7 @@ Page({
     // 提交请求
     wx.showLoading();
     wx.request({
-      url: 'http://202.120.36.7:55000/translate/',
+      url: 'http://47.115.227.63:5000/translate/',
       header:{
         'content-type': 'application/json'		
       },
